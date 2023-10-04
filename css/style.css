@@ -16,6 +16,11 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+i {
+    color: white;
 }
 
 li {
@@ -29,10 +34,34 @@ li {
 
 /* #region COMMON*/
 
+.head-container .categorie,
+.head-container .logo,
+.head-container .icons-menu {
+    vertical-align: middle;
+}
+
+.categorie,
+.icons-menu,
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.categorie ul,
+.icons-menu ul,
+.foot-container .col-a ul,
+.footer-icons ul {
+    display: flex;
+    gap: 8px;
+}
+
 .head-container,
 .main-container,
 .foot-container {
     width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-container .item .labels .discount,
@@ -40,27 +69,26 @@ li {
     padding: 3px 7px;
 }
 
+
 /* #endregion COMMON*/
 
 /* #region HEADER*/
 
 header {
     background-color: #FF6900;
-    box-shadow: ;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
+    z-index: 9999;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
 .head-container {
-    display: flex;
     color: white;
-    justify-content: space-between;
-    margin: 0 auto;
     text-align: center;
+    align-items: center;
     padding: 8px 0;
-
 }
 
 .head-container ul li a {
@@ -68,11 +96,12 @@ header {
 }
 
 .head-container .logo img {
-    max-width: 14%;
+    max-width: 100px;
 }
 
 .logo {
     width: 70%;
+    vertical-align: middle;
 }
 
 .categorie,
@@ -81,7 +110,7 @@ header {
 }
 
 .icons-menu {
-    text-align: end;
+    justify-content: flex-end;
 }
 
 /* #endregion HEADER*/
@@ -90,13 +119,11 @@ header {
 
 main {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .main-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
     gap: 30px 8px;
 }
 
@@ -108,15 +135,16 @@ main {
     position: relative;
 }
 
-.main-container .item .heart {
+.main-container .item .heart i {
     position: absolute;
     right: 0;
     top: 8px;
+    color: black;
     background-color: white;
     padding: 10px;
 }
 
-.main-container .item .heart:hover {
+.main-container .item .heart i:hover {
     color: red;
     cursor: pointer;
 }
@@ -188,5 +216,43 @@ main {
 /* #endregion MAIN*/
 
 /* #region FOOTER*/
+
+footer {
+    background-color: #1A1A1A;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.business-name {
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.business-info {
+    padding-top: 5px;
+}
+
+.call-to-action {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.footer-icons {
+    padding-top: 4px;
+}
+
+.footer-icons ul {
+    padding-top: 4px;
+}
+
+.footer-icons li a i {
+    font-size: 14px;
+}
 
 /* #endregion FOOTER*/
