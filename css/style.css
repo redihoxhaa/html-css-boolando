@@ -35,6 +35,11 @@ li {
     width: 70%;
 }
 
+.main-container .item .labels .discount,
+.main-container .item .labels .eco {
+    padding: 3px 7px;
+}
+
 /* #endregion COMMON*/
 
 /* #region HEADER*/
@@ -95,12 +100,68 @@ main {
     gap: 30px 8px;
 }
 
-.item {
+.main-container .item {
     width: calc(100% / 3 - 8px);
 }
 
+.main-container .item {
+    position: relative;
+}
+
+.main-container .item .heart {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-color: white;
+    padding: 10px;
+}
+
+.main-container .item .heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.main-container .item .labels {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    bottom: 86px;
+    width: 100%;
+}
+
+.main-container .item .labels .discount {
+    background-color: red;
+
+}
+
+.main-container .item .labels .eco {
+    background-color: #008000;
+}
+
+.main-container .item .pics {
+    position: relative;
+}
+
+
 .main-container .item .pics img {
     width: 100%;
+    display: block;
+}
+
+.main-container .item .pics .main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-container .item .pics img:hover {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.main-container .item .info {
+    margin-top: 6px;
 }
 
 .info .brand,
