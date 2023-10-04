@@ -6,9 +6,29 @@
     box-sizing: border-box;
 }
 
+body {
+    padding top
+}
+
 /* #endregion RESET*/
 
 /* #region TYPOGRAPHY*/
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 11px;
+}
+
 
 /* #endregion TYPOGRAPHY*/
 
@@ -18,9 +38,53 @@
 
 /* #region HEADER*/
 
+header {
+    background-color: #FF6900;
+    box-shadow: ;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.head-container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+.head-container ul li a {
+    color: white;
+}
+
+.head-container .logo img {
+    max-width: 14%;
+}
+
+.logo {
+    width: 70%;
+}
+
+.categorie,
+.icons-menu {
+    width: 15%;
+}
+
+.icons-menu {
+    text-align: end;
+}
+
 /* #endregion HEADER*/
 
 /* #region MAIN*/
+
+main {
+    margin-top: 40px
+}
 
 /* #endregion MAIN*/
 
