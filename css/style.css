@@ -17,6 +17,7 @@ body {
 a {
     text-decoration: none;
     color: white;
+
 }
 
 i {
@@ -88,7 +89,7 @@ header {
     color: white;
     text-align: center;
     align-items: center;
-    padding: 8px 0;
+    padding: 12px 0;
 }
 
 .head-container ul li a {
@@ -96,12 +97,13 @@ header {
 }
 
 .head-container .logo img {
-    max-width: 100px;
+    max-width: 80px;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo {
     width: 70%;
-    vertical-align: middle;
 }
 
 .categorie,
