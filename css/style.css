@@ -17,7 +17,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-
 }
 
 i {
@@ -126,11 +125,12 @@ main {
 
 .main-container {
     flex-wrap: wrap;
-    gap: 30px 8px;
+    gap: 30px 16px;
+
 }
 
 .main-container .item {
-    width: calc(100% / 3 - 8px);
+    width: calc((100% - 32px) / 3);
 }
 
 .main-container .item {
@@ -156,7 +156,8 @@ main {
     color: white;
     font-weight: bold;
     font-size: 10px;
-    bottom: 86px;
+    bottom: 30px;
+    left: 0;
     width: 100%;
 }
 
