@@ -163,11 +163,13 @@ main {
 
 .main-container .item .labels .discount {
     background-color: red;
+    display: inline-block;
 
 }
 
 .main-container .item .labels .eco {
     background-color: #008000;
+    display: inline-block;
 }
 
 .main-container .item .pics {
