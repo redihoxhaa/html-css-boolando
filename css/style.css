@@ -176,20 +176,20 @@ main {
     position: relative;
 }
 
-
 .main-container .item .pics img {
     width: 100%;
     display: block;
 }
 
-.main-container .item .pics .main-img {
+.main-container .item .pics .hidden-img {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
 }
 
-.main-container .item .pics img:hover {
-    opacity: 0;
+.main-container .item .pics .img:hover .hidden-img {
+    opacity: 1;
     transition: opacity 0.5s;
 }
 
